@@ -1,9 +1,7 @@
 import React, { Component, createRef } from "react";
 import "./App.css";
 import Tooltip from "./tooltip";
-import createGlobalComponent from "./create-global-component";
-
-const GlobalTooltip = createGlobalComponent();
+import GlobalComponent from "./global-component";
 
 class App extends Component {
   render() {
@@ -17,7 +15,7 @@ class App extends Component {
         <button ref={this.buttonRef} onClick={this.onClickBtn}>
           Open Popover
         </button>
-        <GlobalTooltip
+        <GlobalComponent
           active={tooltipOpen}
           timeout={1000}
           classNames="fade"
@@ -27,7 +25,7 @@ class App extends Component {
             console.log("got the data:", data);
             return <Tooltip />;
           }}
-        </GlobalTooltip>
+        </GlobalComponent>
       </div>
     );
   }
