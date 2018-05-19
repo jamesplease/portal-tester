@@ -13,16 +13,16 @@
   font-size: 1.5em;
 }
 
-.fade-enter {
+.tooltip.fade-enter {
   opacity: 0;
 }
 
-.fade-enter-active,
-.fade-enter-done {
+.tooltip.fade-enter-active,
+.tooltip.fade-enter-done {
   opacity: 1;
 }
 
-.fade-exit-active,
-.fade-exit-done {
+.tooltip.fade-exit-active,
+.tooltip.fade-exit-done {
   opacity: 0;
 }
